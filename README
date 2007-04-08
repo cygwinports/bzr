@@ -4,14 +4,14 @@ Bazaar is a decentralized revision control system, designed to be easy
 for developers and end users alike.
 
 Runtime requirements:
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   celementtree-1.0.5-1
   paramiko-1.6.4-1
   python-2.4.3-1
 
 Build requirements:
-  cygwin-1.5.23-2
-  cygport-0.2.8-1
+  cygwin-1.5.24-2
+  cygport-0.2.11-1
   python-2.4.3-1
 
 Canonical website:
@@ -29,15 +29,15 @@ Language:
 -------------------------------------------
 
 Build instructions:
-  unpack bzr-0.13-X-src.tar.bz2
+  unpack bzr-0.15-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./bzr-0.13-X.cygport all
+  cygport ./bzr-0.15-X.cygport all
 
 This will create:
-  /usr/src/bzr-0.13-X-src.tar.bz2
-  /usr/src/bzr-0.13-X.tar.bz2
+  /usr/src/bzr-0.15-X-src.tar.bz2
+  /usr/src/bzr-0.15-X.tar.bz2
 
 Or use 'prep' instead of 'all' to get a patched source directory.
 
@@ -197,6 +197,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/diff.py
   /usr/lib/python2.4/site-packages/bzrlib/diff.pyc
   /usr/lib/python2.4/site-packages/bzrlib/diff.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/dirstate.py
+  /usr/lib/python2.4/site-packages/bzrlib/dirstate.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/dirstate.pyo
   /usr/lib/python2.4/site-packages/bzrlib/doc/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/doc/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/doc/__init__.pyo
@@ -229,6 +232,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/generate_ids.py
   /usr/lib/python2.4/site-packages/bzrlib/generate_ids.pyc
   /usr/lib/python2.4/site-packages/bzrlib/generate_ids.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/globbing.py
+  /usr/lib/python2.4/site-packages/bzrlib/globbing.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/globbing.pyo
   /usr/lib/python2.4/site-packages/bzrlib/gpg.py
   /usr/lib/python2.4/site-packages/bzrlib/gpg.pyc
   /usr/lib/python2.4/site-packages/bzrlib/gpg.pyo
@@ -301,6 +307,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/merge3.py
   /usr/lib/python2.4/site-packages/bzrlib/merge3.pyc
   /usr/lib/python2.4/site-packages/bzrlib/merge3.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/merge_directive.py
+  /usr/lib/python2.4/site-packages/bzrlib/merge_directive.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/merge_directive.pyo
   /usr/lib/python2.4/site-packages/bzrlib/missing.py
   /usr/lib/python2.4/site-packages/bzrlib/missing.pyc
   /usr/lib/python2.4/site-packages/bzrlib/missing.pyo
@@ -334,9 +343,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/__init__.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/lp_indirect.py
+  /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/lp_indirect.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/lp_indirect.pyo
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/lp_registration.py
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/lp_registration.pyc
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/lp_registration.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/test_lp_indirect.py
+  /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/test_lp_indirect.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/test_lp_indirect.pyo
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/test_register.py
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/test_register.pyc
   /usr/lib/python2.4/site-packages/bzrlib/plugins/launchpad/test_register.pyo
@@ -349,6 +364,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/registry.py
   /usr/lib/python2.4/site-packages/bzrlib/registry.pyc
   /usr/lib/python2.4/site-packages/bzrlib/registry.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/__init__.py
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/__init__.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/__init__.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/knitrepo.py
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/knitrepo.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/knitrepo.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/weaverepo.py
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/weaverepo.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/repofmt/weaverepo.pyo
   /usr/lib/python2.4/site-packages/bzrlib/repository.py
   /usr/lib/python2.4/site-packages/bzrlib/repository.pyc
   /usr/lib/python2.4/site-packages/bzrlib/repository.pyo
@@ -394,6 +418,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/symbol_versioning.py
   /usr/lib/python2.4/site-packages/bzrlib/symbol_versioning.pyc
   /usr/lib/python2.4/site-packages/bzrlib/symbol_versioning.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tag.py
+  /usr/lib/python2.4/site-packages/bzrlib/tag.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tag.pyo
   /usr/lib/python2.4/site-packages/bzrlib/testament.py
   /usr/lib/python2.4/site-packages/bzrlib/testament.pyc
   /usr/lib/python2.4/site-packages/bzrlib/testament.pyo
@@ -490,6 +517,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_inventory.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_inventory.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_inventory.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_join.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_join.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_join.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_locale.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_locale.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_locale.pyo
@@ -505,6 +535,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_merge.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_merge.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_merge.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_merge_directive.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_merge_directive.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_merge_directive.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_missing.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_missing.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_missing.pyo
@@ -565,9 +598,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_sign_my_commits.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_sign_my_commits.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_sign_my_commits.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_split.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_split.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_split.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_status.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_status.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_status.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_tags.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_tags.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_tags.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_testament.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_testament.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_testament.pyo
@@ -583,6 +622,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_upgrade.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_upgrade.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_upgrade.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_version.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_version.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_version.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_version_info.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_version_info.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/blackbox/test_version_info.pyo
@@ -604,9 +646,21 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_break_lock.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_break_lock.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_break_lock.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_commit.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_commit.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_commit.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_create_checkout.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_create_checkout.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_create_checkout.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_hooks.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_hooks.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_hooks.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_http.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_http.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_http.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_last_revision_info.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_last_revision_info.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_last_revision_info.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_locking.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_locking.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_locking.pyo
@@ -619,6 +673,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_pull.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_pull.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_pull.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_push.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_push.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_push.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_tags.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_tags.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_tags.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_uncommit.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_uncommit.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_uncommit.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_update.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_update.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/branch_implementations/test_update.pyo
@@ -649,6 +712,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/lock_helpers.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/lock_helpers.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/lock_helpers.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/__init__.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/__init__.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/__init__.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/test_lock.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/test_lock.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/test_lock.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/test_temporary_write_lock.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/test_temporary_write_lock.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/per_lock/test_temporary_write_lock.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/__init__.pyo
@@ -661,6 +733,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_fileid_involved.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_fileid_involved.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_fileid_involved.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_iter_reverse_revision_history.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_iter_reverse_revision_history.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_iter_reverse_revision_history.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_reconcile.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_reconcile.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_reconcile.pyo
@@ -670,6 +745,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_revision.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_revision.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_revision.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_statistics.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_statistics.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/repository_implementations/test_statistics.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/revisionstore_implementations/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/revisionstore_implementations/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/revisionstore_implementations/__init__.pyo
@@ -682,6 +760,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_ancestry.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_ancestry.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_ancestry.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_annotate.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_annotate.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_annotate.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_api.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_api.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_api.pyo
@@ -703,9 +784,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_cache_utf8.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_cache_utf8.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_cache_utf8.pyo
-  /usr/lib/python2.4/site-packages/bzrlib/tests/test_command.py
-  /usr/lib/python2.4/site-packages/bzrlib/tests/test_command.pyc
-  /usr/lib/python2.4/site-packages/bzrlib/tests/test_command.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_commands.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_commands.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_commands.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_commit.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_commit.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_commit.pyo
@@ -721,9 +802,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_decorators.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_decorators.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_decorators.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_delta.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_delta.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_delta.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_diff.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_diff.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_diff.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_dirstate.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_dirstate.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_dirstate.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_doc_generate.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_doc_generate.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_doc_generate.pyo
@@ -733,15 +820,24 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_escaped_store.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_escaped_store.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_escaped_store.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_extract.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_extract.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_extract.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_fetch.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_fetch.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_fetch.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_ftp_transport.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_ftp_transport.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_ftp_transport.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_generate_docs.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_generate_docs.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_generate_docs.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_generate_ids.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_generate_ids.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_generate_ids.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_globbing.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_globbing.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_globbing.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_gpg.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_gpg.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_gpg.pyo
@@ -757,6 +853,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_http_response.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_http_response.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_http_response.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_https_ca_bundle.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_https_ca_bundle.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_https_ca_bundle.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_identitymap.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_identitymap.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_identitymap.pyo
@@ -796,6 +895,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_merge_core.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_merge_core.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_merge_core.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_merge_directive.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_merge_directive.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_merge_directive.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_missing.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_missing.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_missing.pyo
@@ -811,6 +913,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_osutils.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_osutils.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_osutils.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_osutils_encodings.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_osutils_encodings.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_osutils_encodings.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_patch.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_patch.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_patch.pyo
@@ -894,15 +999,24 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_source.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_source.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_source.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_ssh_transport.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_ssh_transport.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_ssh_transport.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_status.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_status.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_status.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_store.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_store.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_store.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_subsume.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_subsume.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_subsume.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_symbol_versioning.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_symbol_versioning.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_symbol_versioning.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_tag.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_tag.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_tag.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_testament.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_testament.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_testament.pyo
@@ -912,6 +1026,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_textmerge.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_textmerge.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_textmerge.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_timestamp.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_timestamp.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_timestamp.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_trace.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_trace.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_trace.pyo
@@ -966,6 +1083,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_workingtree.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_workingtree.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_workingtree.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_workingtree_4.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_workingtree_4.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/test_workingtree_4.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_wsgi.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_wsgi.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/test_wsgi.pyo
@@ -975,18 +1095,48 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/__init__.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_get_file_mtime.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_get_file_mtime.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_get_file_mtime.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_get_symlink_target.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_get_symlink_target.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_get_symlink_target.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_inv.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_inv.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_inv.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_list_files.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_list_files.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_list_files.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_revision_tree.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_revision_tree.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_revision_tree.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_test_trees.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_test_trees.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_test_trees.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_tree.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_tree.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_tree.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_walkdirs.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_walkdirs.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/tree_implementations/test_walkdirs.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/treeshape.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/treeshape.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/treeshape.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/__init__.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_add.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_add.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_add.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_add_reference.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_add_reference.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_add_reference.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_basis_inventory.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_basis_inventory.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_basis_inventory.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_basis_tree.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_basis_tree.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_basis_tree.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_break_lock.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_break_lock.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_break_lock.pyo
@@ -1005,6 +1155,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_get_parent_ids.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_get_parent_ids.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_get_parent_ids.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_inv.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_inv.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_inv.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_is_control_filename.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_is_control_filename.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_is_control_filename.pyo
@@ -1020,9 +1173,18 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_mkdir.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_mkdir.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_mkdir.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_move.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_move.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_move.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_nested_specifics.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_nested_specifics.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_nested_specifics.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_parents.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_parents.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_parents.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_paths2ids.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_paths2ids.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_paths2ids.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_pull.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_pull.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_pull.pyo
@@ -1032,12 +1194,27 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_read_working_inventory.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_read_working_inventory.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_read_working_inventory.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_readonly.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_readonly.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_readonly.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_rename_one.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_rename_one.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_rename_one.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_revision_tree.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_revision_tree.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_revision_tree.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_set_root_id.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_set_root_id.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_set_root_id.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_smart_add.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_smart_add.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_smart_add.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_unversion.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_unversion.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_unversion.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_walkdirs.py
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_walkdirs.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_walkdirs.pyo
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_workingtree.py
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_workingtree.pyc
   /usr/lib/python2.4/site-packages/bzrlib/tests/workingtree_implementations/test_workingtree.pyo
@@ -1053,6 +1230,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/textui.py
   /usr/lib/python2.4/site-packages/bzrlib/textui.pyc
   /usr/lib/python2.4/site-packages/bzrlib/textui.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/timestamp.py
+  /usr/lib/python2.4/site-packages/bzrlib/timestamp.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/timestamp.pyo
   /usr/lib/python2.4/site-packages/bzrlib/trace.py
   /usr/lib/python2.4/site-packages/bzrlib/trace.pyc
   /usr/lib/python2.4/site-packages/bzrlib/trace.pyo
@@ -1095,6 +1275,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/transport/http/_urllib2_wrappers.py
   /usr/lib/python2.4/site-packages/bzrlib/transport/http/_urllib2_wrappers.pyc
   /usr/lib/python2.4/site-packages/bzrlib/transport/http/_urllib2_wrappers.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/transport/http/ca_bundle.py
+  /usr/lib/python2.4/site-packages/bzrlib/transport/http/ca_bundle.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/transport/http/ca_bundle.pyo
   /usr/lib/python2.4/site-packages/bzrlib/transport/http/response.py
   /usr/lib/python2.4/site-packages/bzrlib/transport/http/response.pyc
   /usr/lib/python2.4/site-packages/bzrlib/transport/http/response.pyo
@@ -1149,6 +1332,9 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/util/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/util/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/util/__init__.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/util/bencode.py
+  /usr/lib/python2.4/site-packages/bzrlib/util/bencode.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/util/bencode.pyo
   /usr/lib/python2.4/site-packages/bzrlib/util/configobj/__init__.py
   /usr/lib/python2.4/site-packages/bzrlib/util/configobj/__init__.pyc
   /usr/lib/python2.4/site-packages/bzrlib/util/configobj/__init__.pyo
@@ -1200,12 +1386,15 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/weavefile.py
   /usr/lib/python2.4/site-packages/bzrlib/weavefile.pyc
   /usr/lib/python2.4/site-packages/bzrlib/weavefile.pyo
-  /usr/lib/python2.4/site-packages/bzrlib/win32console.py
-  /usr/lib/python2.4/site-packages/bzrlib/win32console.pyc
-  /usr/lib/python2.4/site-packages/bzrlib/win32console.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/win32utils.py
+  /usr/lib/python2.4/site-packages/bzrlib/win32utils.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/win32utils.pyo
   /usr/lib/python2.4/site-packages/bzrlib/workingtree.py
   /usr/lib/python2.4/site-packages/bzrlib/workingtree.pyc
   /usr/lib/python2.4/site-packages/bzrlib/workingtree.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/workingtree_4.py
+  /usr/lib/python2.4/site-packages/bzrlib/workingtree_4.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/workingtree_4.pyo
   /usr/lib/python2.4/site-packages/bzrlib/xml4.py
   /usr/lib/python2.4/site-packages/bzrlib/xml4.pyc
   /usr/lib/python2.4/site-packages/bzrlib/xml4.pyo
@@ -1215,24 +1404,30 @@ Files included in the binary package:
   /usr/lib/python2.4/site-packages/bzrlib/xml6.py
   /usr/lib/python2.4/site-packages/bzrlib/xml6.pyc
   /usr/lib/python2.4/site-packages/bzrlib/xml6.pyo
+  /usr/lib/python2.4/site-packages/bzrlib/xml7.py
+  /usr/lib/python2.4/site-packages/bzrlib/xml7.pyc
+  /usr/lib/python2.4/site-packages/bzrlib/xml7.pyo
   /usr/lib/python2.4/site-packages/bzrlib/xml_serializer.py
   /usr/lib/python2.4/site-packages/bzrlib/xml_serializer.pyc
   /usr/lib/python2.4/site-packages/bzrlib/xml_serializer.pyo
-  /usr/share/doc/Cygwin/bzr-0.13.README
-  /usr/share/doc/bzr-0.13/COPYING.txt
-  /usr/share/doc/bzr-0.13/HACKING
-  /usr/share/doc/bzr-0.13/INSTALL
-  /usr/share/doc/bzr-0.13/NEWS
-  /usr/share/doc/bzr-0.13/README
-  /usr/share/doc/bzr-0.13/TODO
+  /usr/share/doc/Cygwin/bzr-0.15.README
+  /usr/share/doc/bzr-0.15/COPYING.txt
+  /usr/share/doc/bzr-0.15/HACKING
+  /usr/share/doc/bzr-0.15/INSTALL
+  /usr/share/doc/bzr-0.15/NEWS
+  /usr/share/doc/bzr-0.15/README
+  /usr/share/doc/bzr-0.15/TODO
   /usr/share/man/man1/bzr.1.gz
 
 ------------------
 
 Port Notes:
 
+----- version 0.15-1 -----
+Version bump.
+
 ----- version 0.13-1 -----
-Initial release for Cygwin.
+Version bump.
 
 
 Cygwin port maintained by:
