@@ -11,7 +11,7 @@ Runtime requirements:
 
 Build requirements:
   cygwin-1.5.24-2
-  cygport-0.3.1-1
+  cygport-0.3.5-1
   python-2.5.1-3
 
 Canonical website:
@@ -29,15 +29,15 @@ Language:
 -------------------------------------------
 
 Build instructions:
-  unpack bzr-0.18-X-src.tar.bz2
+  unpack bzr-0.91-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./bzr-0.18-X.cygport all
+  cygport ./bzr-0.91-X.cygport all
 
 This will create:
-  /usr/src/bzr-0.18-X-src.tar.bz2
-  /usr/src/bzr-0.18-X.tar.bz2
+  /usr/src/bzr-0.91-X-src.tar.bz2
+  /usr/src/bzr-0.91-X.tar.bz2
 
 Or use 'prep' instead of 'all' to get a patched source directory.
 
@@ -46,16 +46,31 @@ Or use 'prep' instead of 'all' to get a patched source directory.
 Files included in the binary package:
 
   /usr/bin/bzr
-  /usr/lib/python2.5/site-packages/bzr-0.18.0-py2.5.egg-info
+  /usr/lib/python2.5/site-packages/bzr-0.91.0-py2.5.egg-info
   /usr/lib/python2.5/site-packages/bzrlib/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/_dirstate_helpers_c.dll
+  /usr/lib/python2.5/site-packages/bzrlib/_dirstate_helpers_py.py
+  /usr/lib/python2.5/site-packages/bzrlib/_dirstate_helpers_py.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/_dirstate_helpers_py.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/_knit_load_data_c.dll
+  /usr/lib/python2.5/site-packages/bzrlib/_knit_load_data_py.py
+  /usr/lib/python2.5/site-packages/bzrlib/_knit_load_data_py.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/_knit_load_data_py.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/_patiencediff_c.dll
+  /usr/lib/python2.5/site-packages/bzrlib/_patiencediff_py.py
+  /usr/lib/python2.5/site-packages/bzrlib/_patiencediff_py.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/_patiencediff_py.pyo
   /usr/lib/python2.5/site-packages/bzrlib/add.py
   /usr/lib/python2.5/site-packages/bzrlib/add.pyc
   /usr/lib/python2.5/site-packages/bzrlib/add.pyo
   /usr/lib/python2.5/site-packages/bzrlib/annotate.py
   /usr/lib/python2.5/site-packages/bzrlib/annotate.pyc
   /usr/lib/python2.5/site-packages/bzrlib/annotate.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/api.py
+  /usr/lib/python2.5/site-packages/bzrlib/api.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/api.pyo
   /usr/lib/python2.5/site-packages/bzrlib/atomicfile.py
   /usr/lib/python2.5/site-packages/bzrlib/atomicfile.pyc
   /usr/lib/python2.5/site-packages/bzrlib/atomicfile.pyo
@@ -80,18 +95,27 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_commit.py
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_commit.pyc
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_commit.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_dirstate.py
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_dirstate.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_dirstate.pyo
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_info.py
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_info.pyc
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_info.pyo
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_inventory.py
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_inventory.pyc
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_inventory.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_knit.py
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_knit.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_knit.pyo
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_log.py
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_log.pyc
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_log.pyo
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_osutils.py
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_osutils.pyc
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_osutils.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_pack.py
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_pack.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_pack.pyo
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_rocks.py
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_rocks.pyc
   /usr/lib/python2.5/site-packages/bzrlib/benchmarks/bench_rocks.pyo
@@ -155,9 +179,6 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/bundle/commands.py
   /usr/lib/python2.5/site-packages/bzrlib/bundle/commands.pyc
   /usr/lib/python2.5/site-packages/bzrlib/bundle/commands.pyo
-  /usr/lib/python2.5/site-packages/bzrlib/bundle/common.py
-  /usr/lib/python2.5/site-packages/bzrlib/bundle/common.pyc
-  /usr/lib/python2.5/site-packages/bzrlib/bundle/common.pyo
   /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/__init__.pyo
@@ -167,6 +188,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/v09.py
   /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/v09.pyc
   /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/v09.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/v4.py
+  /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/v4.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/bundle/serializer/v4.pyo
   /usr/lib/python2.5/site-packages/bzrlib/bzrdir.py
   /usr/lib/python2.5/site-packages/bzrlib/bzrdir.pyc
   /usr/lib/python2.5/site-packages/bzrlib/bzrdir.pyo
@@ -203,6 +227,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/delta.py
   /usr/lib/python2.5/site-packages/bzrlib/delta.pyc
   /usr/lib/python2.5/site-packages/bzrlib/delta.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/deprecated_graph.py
+  /usr/lib/python2.5/site-packages/bzrlib/deprecated_graph.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/deprecated_graph.pyo
   /usr/lib/python2.5/site-packages/bzrlib/diff.py
   /usr/lib/python2.5/site-packages/bzrlib/diff.pyc
   /usr/lib/python2.5/site-packages/bzrlib/diff.pyo
@@ -217,6 +244,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/doc/api/__init__.pyo
   /usr/lib/python2.5/site-packages/bzrlib/doc/api/branch.txt
   /usr/lib/python2.5/site-packages/bzrlib/doc/api/transport.txt
+  /usr/lib/python2.5/site-packages/bzrlib/email_message.py
+  /usr/lib/python2.5/site-packages/bzrlib/email_message.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/email_message.pyo
   /usr/lib/python2.5/site-packages/bzrlib/errors.py
   /usr/lib/python2.5/site-packages/bzrlib/errors.pyc
   /usr/lib/python2.5/site-packages/bzrlib/errors.pyo
@@ -268,6 +298,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/ignores.py
   /usr/lib/python2.5/site-packages/bzrlib/ignores.pyc
   /usr/lib/python2.5/site-packages/bzrlib/ignores.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/index.py
+  /usr/lib/python2.5/site-packages/bzrlib/index.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/index.pyo
   /usr/lib/python2.5/site-packages/bzrlib/info.py
   /usr/lib/python2.5/site-packages/bzrlib/info.pyc
   /usr/lib/python2.5/site-packages/bzrlib/info.pyo
@@ -310,6 +343,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/lsprof.py
   /usr/lib/python2.5/site-packages/bzrlib/lsprof.pyc
   /usr/lib/python2.5/site-packages/bzrlib/lsprof.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/mail_client.py
+  /usr/lib/python2.5/site-packages/bzrlib/mail_client.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/mail_client.pyo
   /usr/lib/python2.5/site-packages/bzrlib/memorytree.py
   /usr/lib/python2.5/site-packages/bzrlib/memorytree.pyc
   /usr/lib/python2.5/site-packages/bzrlib/memorytree.pyo
@@ -328,6 +364,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/msgeditor.py
   /usr/lib/python2.5/site-packages/bzrlib/msgeditor.pyc
   /usr/lib/python2.5/site-packages/bzrlib/msgeditor.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/multiparent.py
+  /usr/lib/python2.5/site-packages/bzrlib/multiparent.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/multiparent.pyo
   /usr/lib/python2.5/site-packages/bzrlib/mutabletree.py
   /usr/lib/python2.5/site-packages/bzrlib/mutabletree.pyc
   /usr/lib/python2.5/site-packages/bzrlib/mutabletree.pyo
@@ -337,6 +376,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/osutils.py
   /usr/lib/python2.5/site-packages/bzrlib/osutils.pyc
   /usr/lib/python2.5/site-packages/bzrlib/osutils.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/pack.py
+  /usr/lib/python2.5/site-packages/bzrlib/pack.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/pack.pyo
   /usr/lib/python2.5/site-packages/bzrlib/patch.py
   /usr/lib/python2.5/site-packages/bzrlib/patch.pyc
   /usr/lib/python2.5/site-packages/bzrlib/patch.pyo
@@ -367,6 +409,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/launchpad/test_register.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/launchpad/test_register.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/launchpad/test_register.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/multiparent.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/multiparent.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/multiparent.pyo
   /usr/lib/python2.5/site-packages/bzrlib/progress.py
   /usr/lib/python2.5/site-packages/bzrlib/progress.pyc
   /usr/lib/python2.5/site-packages/bzrlib/progress.pyo
@@ -439,6 +484,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/smart/vfs.py
   /usr/lib/python2.5/site-packages/bzrlib/smart/vfs.pyc
   /usr/lib/python2.5/site-packages/bzrlib/smart/vfs.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/smtp_connection.py
+  /usr/lib/python2.5/site-packages/bzrlib/smtp_connection.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/smtp_connection.pyo
   /usr/lib/python2.5/site-packages/bzrlib/status.py
   /usr/lib/python2.5/site-packages/bzrlib/status.pyc
   /usr/lib/python2.5/site-packages/bzrlib/status.pyo
@@ -517,9 +565,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_breakin.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_breakin.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_breakin.pyo
-  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_bundle.py
-  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_bundle.pyc
-  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_bundle.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_bundle_info.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_bundle_info.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_bundle_info.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_cat.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_cat.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_cat.pyo
@@ -586,6 +634,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_ls.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_ls.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_ls.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_lsprof.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_lsprof.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_lsprof.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_merge.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_merge.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_merge.pyo
@@ -607,6 +658,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_outside_wt.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_outside_wt.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_outside_wt.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_pack.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_pack.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_pack.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_pull.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_pull.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_pull.pyo
@@ -643,6 +697,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_selftest.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_selftest.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_selftest.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_send.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_send.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_send.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_serve.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_serve.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/blackbox/test_serve.pyo
@@ -757,6 +814,39 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/bzrdir_implementations/test_bzrdir.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/bzrdir_implementations/test_bzrdir.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/bzrdir_implementations/test_bzrdir.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/__init__.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/__init__.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_branch.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_branch.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_branch.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_cat.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_cat.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_cat.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_checkout.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_checkout.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_checkout.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_init.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_init.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_init.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_init_repository.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_init_repository.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_init_repository.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_merge.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_merge.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_merge.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_missing.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_missing.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_missing.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_pull.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_pull.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_pull.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_push.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_push.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_push.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_update.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_update.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/commands/test_update.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/interrepository_implementations/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/interrepository_implementations/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/interrepository_implementations/__init__.pyo
@@ -775,6 +865,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/interversionedfile_implementations/test_join.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/interversionedfile_implementations/test_join.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/interversionedfile_implementations/test_join.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/inventory_implementations/__init__.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/inventory_implementations/__init__.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/inventory_implementations/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/inventory_implementations/basics.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/inventory_implementations/basics.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/inventory_implementations/basics.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/lock_helpers.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/lock_helpers.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/lock_helpers.pyo
@@ -796,12 +892,21 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_commit_builder.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_commit_builder.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_commit_builder.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_fetch.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_fetch.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_fetch.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_fileid_involved.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_fileid_involved.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_fileid_involved.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_has_same_location.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_has_same_location.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_has_same_location.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_iter_reverse_revision_history.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_iter_reverse_revision_history.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_iter_reverse_revision_history.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_pack.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_pack.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_pack.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_reconcile.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_reconcile.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_reconcile.pyo
@@ -814,6 +919,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_statistics.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_statistics.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_statistics.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_write_group.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_write_group.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/repository_implementations/test_write_group.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/revisionstore_implementations/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/revisionstore_implementations/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/revisionstore_implementations/__init__.pyo
@@ -823,6 +931,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/stub_sftp.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/stub_sftp.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/stub_sftp.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test__dirstate_helpers.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test__dirstate_helpers.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test__dirstate_helpers.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_ancestry.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_ancestry.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_ancestry.pyo
@@ -880,12 +991,18 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_delta.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_delta.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_delta.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_deprecated_graph.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_deprecated_graph.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_deprecated_graph.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_diff.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_diff.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_diff.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_dirstate.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_dirstate.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_dirstate.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_email_message.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_email_message.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_email_message.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_errors.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_errors.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_errors.pyo
@@ -922,6 +1039,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_help.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_help.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_help.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_hooks.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_hooks.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_hooks.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_http.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_http.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_http.pyo
@@ -937,6 +1057,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_ignores.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_ignores.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_ignores.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_index.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_index.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_index.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_info.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_info.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_info.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_inv.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_inv.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_inv.pyo
@@ -958,6 +1084,12 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_log.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_log.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_log.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_lsprof.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_lsprof.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_lsprof.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_mail_client.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_mail_client.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_mail_client.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_memorytree.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_memorytree.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_memorytree.pyo
@@ -979,6 +1111,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_msgeditor.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_msgeditor.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_msgeditor.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_multiparent.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_multiparent.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_multiparent.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_nonascii.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_nonascii.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_nonascii.pyo
@@ -991,6 +1126,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_osutils_encodings.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_osutils_encodings.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_osutils_encodings.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_pack.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_pack.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_pack.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_patch.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_patch.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_patch.pyo
@@ -1077,6 +1215,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_smart_transport.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_smart_transport.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_smart_transport.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_smtp_connection.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_smtp_connection.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_smtp_connection.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_source.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_source.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_source.pyo
@@ -1164,6 +1305,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_whitebox.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_whitebox.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_whitebox.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_win32utils.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_win32utils.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/test_win32utils.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_workingtree.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_workingtree.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_workingtree.pyo
@@ -1176,6 +1320,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_xml.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_xml.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/test_xml.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/transport_util.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/transport_util.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/transport_util.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/tree_implementations/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/tree_implementations/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/tree_implementations/__init__.pyo
@@ -1299,6 +1446,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_smart_add.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_smart_add.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_smart_add.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_uncommit.py
+  /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_uncommit.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_uncommit.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_unversion.py
   /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_unversion.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tests/workingtree_implementations/test_unversion.pyo
@@ -1335,6 +1485,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/transport/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/transport/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/transport/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/transport/brokenrename.py
+  /usr/lib/python2.5/site-packages/bzrlib/transport/brokenrename.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/transport/brokenrename.pyo
   /usr/lib/python2.5/site-packages/bzrlib/transport/chroot.py
   /usr/lib/python2.5/site-packages/bzrlib/transport/chroot.pyc
   /usr/lib/python2.5/site-packages/bzrlib/transport/chroot.pyo
@@ -1392,6 +1545,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/transport/ssh.py
   /usr/lib/python2.5/site-packages/bzrlib/transport/ssh.pyc
   /usr/lib/python2.5/site-packages/bzrlib/transport/ssh.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/transport/unlistable.py
+  /usr/lib/python2.5/site-packages/bzrlib/transport/unlistable.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/transport/unlistable.pyo
   /usr/lib/python2.5/site-packages/bzrlib/tree.py
   /usr/lib/python2.5/site-packages/bzrlib/tree.pyc
   /usr/lib/python2.5/site-packages/bzrlib/tree.pyo
@@ -1452,6 +1608,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/util/elementtree/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/util/elementtree/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/util/elementtree/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/util/simplemapi.py
+  /usr/lib/python2.5/site-packages/bzrlib/util/simplemapi.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/util/simplemapi.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/util/tests/__init__.py
+  /usr/lib/python2.5/site-packages/bzrlib/util/tests/__init__.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/util/tests/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/util/tests/test_bencode.py
+  /usr/lib/python2.5/site-packages/bzrlib/util/tests/test_bencode.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/util/tests/test_bencode.pyo
   /usr/lib/python2.5/site-packages/bzrlib/version.py
   /usr/lib/python2.5/site-packages/bzrlib/version.pyc
   /usr/lib/python2.5/site-packages/bzrlib/version.pyo
@@ -1500,17 +1665,20 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/xml_serializer.py
   /usr/lib/python2.5/site-packages/bzrlib/xml_serializer.pyc
   /usr/lib/python2.5/site-packages/bzrlib/xml_serializer.pyo
-  /usr/share/doc/Cygwin/bzr-0.18.README
-  /usr/share/doc/bzr-0.18/COPYING.txt
-  /usr/share/doc/bzr-0.18/INSTALL
-  /usr/share/doc/bzr-0.18/NEWS
-  /usr/share/doc/bzr-0.18/README
-  /usr/share/doc/bzr-0.18/TODO
+  /usr/share/doc/Cygwin/bzr-0.91.README
+  /usr/share/doc/bzr-0.91/COPYING.txt
+  /usr/share/doc/bzr-0.91/INSTALL
+  /usr/share/doc/bzr-0.91/NEWS
+  /usr/share/doc/bzr-0.91/README
+  /usr/share/doc/bzr-0.91/TODO
   /usr/share/man/man1/bzr.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.91-1 -----
+Version bump.
 
 ----- version 0.18-1 -----
 Version bump.
