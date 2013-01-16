@@ -1,0 +1,11 @@
+inherit distutils
+
+NAME="bzr"
+VERSION=2.6b2
+RELEASE=2
+CATEGORY="Devel"
+SUMMARY="Bazaar revision control system"
+DESCRIPTION="Bazaar is a decentralized revision control system, designed to
+be easy for developers and end users alike."
+HOMEPAGE="http://bazaar-vcs.org/"
+SRC_URI="https://launchpad.net/bzr/${PV_MAJ_MIN%b*}/${PV}/+download/${P}.tar.gz"

@@ -1,5 +1,0 @@
-inherit distutils
-
-DESCRIPTION="Bazaar distributed version control system"
-HOMEPAGE="http://bazaar-vcs.org/"
-SRC_URI="https://launchpad.net/${PN}/${PV_MAJ_MIN}/${PV}/+download/${P}.tar.gz"

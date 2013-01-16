@@ -1,5 +1,0 @@
-category: Devel
-requires: libgcc1 python python-crypto python-paramiko
-sdesc: "Bazaar revision control system"
-ldesc: "Bazaar is a decentralized revision control system, designed to 
-be easy for developers and end users alike."
